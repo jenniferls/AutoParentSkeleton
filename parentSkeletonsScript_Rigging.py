@@ -23,6 +23,6 @@ def main():
 
     s_jnt_list.append(root) #Adds source root joint to source joint list
     t_jnt_list.append(target_root) #Adds target root joint to target joint list
-    getJoints(root, s_jnt_list) #Attends children source joints to source joint list
+    getJoints(root, s_jnt_list) #Appends children source joints to source joint list
     getJoints(target_root, t_jnt_list) #Appends children target joints to target joint list
     parentSkeletons(t_jnt_list, s_jnt_list)
